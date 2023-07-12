@@ -1,0 +1,7 @@
+---
+- name: Test Playbook
+  hosts: localhost
+  tasks:
+    - name: Debug
+      ansible.builtin.debug:
+        mag: "hello"
