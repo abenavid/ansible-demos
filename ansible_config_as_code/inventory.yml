@@ -1,0 +1,22 @@
+---
+all:
+  children:
+    automationcontroller:
+      hosts:
+        student1.f8s5r.example.opentlc.com:
+
+    automationhub:
+      hosts:
+        hub-student1.f8s5r.example.opentlc.com:
+
+    builder:
+      hosts:
+        localhost:
+
+    vars:
+      env: dev
+      controller_configuration_credentials_secure_logging: false
+      controller_pass: ih4vam53
+      ansible_ssh_common_args: '-o StrictHostKeyChecking=no'  # might need this, test without on lab
+
+...

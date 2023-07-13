@@ -1,0 +1,12 @@
+---
+vault_pass: password
+machine_pass: ih4vam53
+controller_pass: ih4vam53
+ah_pass: ih4vam53
+controller_api_user_pass: ih4vam53
+student_account: student1
+
+ah_token_password: 1b3960660806fb5a9e6de1064a79e9eccb115833
+ah_token: 1b3960660806fb5a9e6de1064a79e9eccb115833
+
+# token =
