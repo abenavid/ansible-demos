@@ -18,4 +18,5 @@ ee_validate_certs: false
 ah_validate_certs: false
 
 ee_builder_dir_clean: false
+ah_verify_ssl: false
 ...
