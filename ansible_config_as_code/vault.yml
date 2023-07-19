@@ -1,9 +1,9 @@
 ---
 vault_pass: password
-machine_pass: 3lg481bd
+machine_pass: password
 controller_pass: 3lg481bd
 ah_pass: 3lg481bd
 controller_api_user_pass: 3lg481bd
-ah_token_password: 773c4e11c3ac086a16d4735d395fa19ae36569e0
+ah_token_password: faaf8aaf34876da127b77bf5de547bae6d21cc3b
 student_account: student
 ...

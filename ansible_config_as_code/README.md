@@ -5,7 +5,6 @@ sudo pip3.9 install pre-commit
 
 2. pre-commit install
 
-
 3. sudo dnf install ansible-core ansible-lint ansible-builder podman
 
 4. ansible-galaxy collection install infra.ee_utilities:2.0.8 containers.podman community.general
