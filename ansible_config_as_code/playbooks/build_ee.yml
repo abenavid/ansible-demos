@@ -1,6 +1,6 @@
 ---
 - name: Playbook to configure execution environments
-  hosts: builder
+  hosts: localhost
   gather_facts: true
   vars_files:
     - "../vault.yml"

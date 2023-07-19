@@ -5,12 +5,12 @@
     - "../vault.yml"
   connection: local
   tasks:
-    - name: Include setting role
+    - name: include setting role
       ansible.builtin.include_role:
         name: infra.controller_configuration.settings
       when: controller_settings | length is not match('0')
 
-    - name: Create organizations without credentials
+    - name: create organizations without credentials
       ansible.builtin.set_fact:
         orgs_no_creds: "{{ orgs_no_creds | default([]) + [{ 'name' : item.name }] }}"
       loop: "{{ controller_organizations }}"
@@ -18,38 +18,37 @@
         - controller_organizations | length is not match('0')
         - (item.state | default('Present')) != 'absent'
 
-    - name: Print out custom fact
+    - name: print out custom fact
       ansible.builtin.debug:
         var: orgs_no_creds
         verbosity: 2
 
-    - name: Include organization role
+    - name: include organization role
       ansible.builtin.include_role:
         name: infra.controller_configuration.organizations
       vars:
         controller_organizations: "{{ orgs_no_creds }}"
       when: orgs_no_creds | length is not match('0')
 
-    - name: Include labels role
+    - name: include labels role
       ansible.builtin.include_role:
         name: infra.controller_configuration.labels
       when: controller_labels is defined
 
-    - name: Include users role
+    - name: include users role
       ansible.builtin.include_role:
         name: infra.controller_configuration.users
       vars:
         controller_configuration_users_secure_logging: true
       when: controller_user_accounts is defined
 
-    - name: Include teams role
+    - name: include teams role
       ansible.builtin.include_role:
         name: infra.controller_configuration.teams
       when: controller_teams is defined
 
     # probably not optimal but works, looking for better solutions
     - name: Figuring out AH token
-      when: ah_token is not defined or ah_token['token'] is defined
       block:
         - name: Authenticate and get an API token from Automation Hub
           infra.ah_configuration.ah_token:
@@ -59,7 +58,12 @@
             ah_path_prefix: 'galaxy'  # this is for private automation hub
             ah_verify_ssl: false
           register: r_ah_token
-          notify: Fixing format
+
+        - name: Fixing format
+          ansible.builtin.set_fact:
+            ah_token: "{{ ah_token['token'] }}"
+          when: r_ah_token['changed']
+      when: ah_token is not defined or ah_token['token'] is defined
 
     - name: Include credential_types role
       ansible.builtin.include_role:
@@ -136,9 +140,4 @@
       ansible.builtin.include_role:
         name: infra.controller_configuration.roles
       when: controller_roles is defined
-
-  handlers:
-    - name: Fixing format
-      ansible.builtin.set_fact:
-        ah_token: "{{ ah_token['token'] }}"
 ...
