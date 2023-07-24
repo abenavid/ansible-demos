@@ -1,6 +1,6 @@
 ---
 ee_list:
-  - name: "config_as_code"
+  - name: config_as_code
     collections:
       - name: infra.controller_configuration
       - name: infra.ah_configuration
