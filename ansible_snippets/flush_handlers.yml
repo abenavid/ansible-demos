@@ -1,0 +1,21 @@
+---
+- name: Flush handlers demo
+  hosts: localhost
+  gather_facts: false
+  tasks:
+    - name: Command run to have status update
+      ansible.builtin.command: "uptime"
+      notify: Handler 1
+
+    # note this will ensure handler is run before the rest of the playbook
+    - name: Flush handler 1
+      ansible.builtin.meta: "flush_handlers"
+
+    - name: Debug message after handler is run
+      ansible.builtin.debug:
+        msg: Handler was run
+
+  handlers:
+    - name: Handler 1
+      ansible.builtin.debug:
+        msg: Hello from Handler 1
