@@ -1,0 +1,14 @@
+---
+- name: Link to azure account
+  hosts: localhost
+  connection: local
+  become: false
+  gather_facts: false
+  vars_files:
+    - vars/vault.yml
+    - vars/vars.yml
+  tasks:
+    - name:
+        azure.azcollection:
+    
+
