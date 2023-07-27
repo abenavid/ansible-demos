@@ -9,6 +9,11 @@
     - vars/vars.yml
     - vars/azure_auth.yml
   tasks:
+    - name: Create dir
+      file: 
+        path: "~/.azure/credentials"
+        state: directory
+
     - name: Creating a file with content
       copy:
         dest: "~/.azure/credentials"
