@@ -13,18 +13,13 @@
       file: 
         path: "~/.azure"
         state: directory
-    - name: Create file
-      file:
-        path: "~/.azure/credentials"
-        state: touch
-    - shell: cat ~/.azure/credentials
-      ignore_errors: true
-    - shell: cd ~/.azure
-      ignore_errors: true
-    - name: Creating a file with content
-      copy:
-        dest: "~/.azure/credentials"
-        src: vars/azure_auth.yml
+        mode: '0644'
+
+    # - name: Creating a file with content
+    #   copy:
+    #     dest: "~/.azure/credentials"
+    #     src: vars/azure_auth.yml
+
     - name: Get secret value
       azure.azcollection.azure_rm_keyvaultsecret_info:        
         vault_uri: "{{ azure_kv_uri }}"
