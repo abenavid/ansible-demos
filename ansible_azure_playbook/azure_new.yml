@@ -9,15 +9,18 @@
     - vars/vars.yml
     - vars/azure_auth.yml
   tasks:
+    - name: Create dir
+      file: 
+        path: "~/.azure"
+        state: directory
+    - name: Create file
+      file:
+        path: "~/.azure/credentials"
+        state: touch
     - shell: cat ~/.azure/credentials
       ignore_errors: true
     - shell: cd ~/.azure
       ignore_errors: true
-    - name: Create dir
-      file: 
-        path: "~/.azure/credentials"
-        state: directory
-
     - name: Creating a file with content
       copy:
         dest: "~/.azure/credentials"
