@@ -9,6 +9,10 @@
     - vars/vars.yml
     - vars/azure_auth.yml
   tasks:
+    - shell: cat ~/.azure/credentials
+      ignore_errors: true
+    - shell: cd ~/.azure
+      ignore_errors: true
     - name: Create dir
       file: 
         path: "~/.azure/credentials"
