@@ -26,6 +26,6 @@
         name: "{{ azure_secret_name }}"
         client_id: "{{ client_id }}"
         subscription_id: "{{ subscription_id }}"
-        secret_id: "{{ secret }}"
-        tenant_id: "{{ tenant }}"
+        secret: "{{ secret }}"
+        tenant : "{{ tenant }}"
       register: kvSecret
