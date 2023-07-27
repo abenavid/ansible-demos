@@ -13,4 +13,8 @@
       azure.azcollection.azure_rm_keyvaultsecret_info:        
         vault_uri: "{{ azure_kv_uri }}"
         name: "{{ azure_secret_name }}"
+        client_id: "{{ client_id }}"
+        subscription_id: "{{ subscription_id }}"
+        secret_id: "{{ secret }}"
+        tenant_id: "{{ tenant }}"
       register: kvSecret
