@@ -2,13 +2,15 @@
 - name: Link to azure account
   hosts: localhost
   connection: local
-  become: false
+  become: true
   gather_facts: false
   vars_files:
     - vars/vault.yml
     - vars/vars.yml
+    - vars/azure_auth.yml
   tasks:
-    - name:
-        azure.azcollection:
-    
-
+    - name: Get secret value
+      azure.azcollection.azure_rm_keyvaultsecret_info:        
+        vault_uri: "{{ azure_kv_uri }}"
+        name: "{{ azure_secret_name }}"
+      register: kvSecret

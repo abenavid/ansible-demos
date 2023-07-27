@@ -5,7 +5,7 @@
   become: false
   gather_facts: false
   vars_files:
-    - vars/ah_ee.yml
+    - vars/ah_ee_new.yml
     - vars/auth.yml
     - vars/settings.yml
     - vars/vars.yml
@@ -14,3 +14,4 @@
     - name: Include ee_builder role
       ansible.builtin.include_role:
         name: infra.ee_utilities.ee_builder
+        

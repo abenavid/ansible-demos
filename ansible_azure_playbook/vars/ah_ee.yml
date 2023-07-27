@@ -1,12 +1,13 @@
 ---
 ee_list:
-  - name: config_as_code
+  - name: azure_ee_new
     collections:
       - name: infra.controller_configuration
       - name: infra.ah_configuration
       - name: infra.ee_utilities
       - name: infra.aap_utilities
       - name: awx.awx
+      - name: azure.azcollection
 
 ee_image_push: true
 ee_prune_images: false
