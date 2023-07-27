@@ -9,23 +9,8 @@
     - vars/vars.yml
     - vars/azure_auth.yml
   tasks:
-    - name: Create dir
-      file: 
-        path: "~/.azure"
-        state: directory
-        mode: '0644'
-
-    # - name: Creating a file with content
-    #   copy:
-    #     dest: "~/.azure/credentials"
-    #     src: vars/azure_auth.yml
-
     - name: Get secret value
       azure.azcollection.azure_rm_keyvaultsecret_info:        
         vault_uri: "{{ azure_kv_uri }}"
         name: "{{ azure_secret_name }}"
-        # client_id: "{{ client_id }}"
-        # subscription_id: "{{ subscription_id }}"
-        # secret: "{{ secret }}"
-        # tenant : "{{ tenant }}"
       register: kvSecret
