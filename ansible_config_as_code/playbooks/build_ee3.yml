@@ -35,6 +35,7 @@
               - name: awx.awx
                 version: 22.4.0
               - infra.controller_configuration
+              - ansible.controller
               - infra.ah_configuration
         build_steps:
           prepend_final:
