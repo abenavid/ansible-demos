@@ -1,0 +1,12 @@
+---
+azure_client_id: 904c6049-1494-4640-9210-d58089a998e4
+azure_subscription_id: 33e135b9-94c9-477a-9fa0-c9467e8d3d65
+azure_tenant_id: 64dc69e4-d083-49fc-9569-ebece1dd1408
+azure_rg_name: openenv-djzph
+azure_kv_name: ansible-keyvault1
+azure_kv_uri: https://ansible-keyvault1.vault.azure.net
+azure_secret_name: ansible-secret
+ah_host: hub-student1.gt955.example.opentlc.com
+env: dev
+controller_configuration_credentials_secure_logging: false
+ansible_ssh_common_args: '-o StrictHostKeyChecking=no'  # might need this, test without on lab

@@ -1,0 +1,298 @@
+2023-07-25T23:28:09.578630+00:00 CRITICAL 'ansible_navigator.actions.run_playbook._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': 'b73b007d-ce02-491d-8d67-90ccedb914a6', 'counter': 1, 'stdout': '/usr/local/lib/python3.8/site-packages/paramiko/transport.py:236: CryptographyDeprecationWarning: Blowfish has been deprecated', 'start_line': 0, 'end_line': 1, 'runner_ident': 'c45f3d39-9935-491e-9463-049227a1d91d', 'created': '2023-07-25T23:28:09.572674'}
+2023-07-25T23:28:09.579563+00:00 CRITICAL 'ansible_navigator.actions.run_playbook._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': '564b0974-e96e-45f5-a154-e96e548f6c63', 'counter': 2, 'stdout': '  "class": algorithms.Blowfish,', 'start_line': 1, 'end_line': 2, 'runner_ident': 'c45f3d39-9935-491e-9463-049227a1d91d', 'created': '2023-07-25T23:28:09.572799'}
+2023-07-25T23:28:09.924101+00:00 CRITICAL 'ansible_navigator.actions.run_playbook._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': '341c39b8-6b7e-470b-807e-d76f8f5a12f2', 'counter': 3, 'stdout': '/usr/local/lib/python3.8/site-packages/paramiko/transport.py:236: CryptographyDeprecationWarning: Blowfish has been deprecated', 'start_line': 2, 'end_line': 3, 'runner_ident': 'c45f3d39-9935-491e-9463-049227a1d91d', 'created': '2023-07-25T23:28:09.917687'}
+2023-07-25T23:28:09.924548+00:00 CRITICAL 'ansible_navigator.actions.run_playbook._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': 'eae3a858-b11a-4216-a5bd-d708bf17e649', 'counter': 4, 'stdout': '  "class": algorithms.Blowfish,', 'start_line': 3, 'end_line': 4, 'runner_ident': 'c45f3d39-9935-491e-9463-049227a1d91d', 'created': '2023-07-25T23:28:09.917770'}
+2023-07-25T23:28:09.924760+00:00 CRITICAL 'ansible_navigator.actions.run_playbook._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': '85ffeecf-6831-4ac0-b3d9-d223b271c648', 'counter': 5, 'stdout': '\x1b[0;31mERROR! the playbook: playbooks/hub_config.yml could not be found\x1b[0m', 'start_line': 4, 'end_line': 5, 'runner_ident': 'c45f3d39-9935-491e-9463-049227a1d91d', 'created': '2023-07-25T23:28:09.923908'}
+2023-07-25T23:37:52.175316+00:00 ERROR 'ansible_navigator.image_manager.puller._log_message' Execution environment pull failed
+2023-07-25T23:37:58.026712+00:00 ERROR 'ansible_navigator.actions.collections._run_runner' /usr/local/lib/python3.8/site-packages/paramiko/transport.py:236: CryptographyDeprecationWarning: Blowfish has been deprecated
+  "class": algorithms.Blowfish,
+Traceback (most recent call last):
+  File "/home/alexb/.cache/ansible-navigator/catalog_collections.py", line 42, in <module>
+    from ansible_navigator.utils.key_value_store import KeyValueStore
+ModuleNotFoundError: No module named 'ansible_navigator'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/alexb/.cache/ansible-navigator/catalog_collections.py", line 45, in <module>
+    from key_value_store import KeyValueStore
+  File "/opt/ansible_navigator_utils/key_value_store.py", line 14, in <module>
+    class KVSKeysView(KeysView[str]):
+TypeError: 'ABCMeta' object is not subscriptable
+
+2023-07-25T23:38:04.390191+00:00 ERROR 'ansible_navigator.actions.collections._parse' Unable to extract collection json from stdout
+2023-07-25T23:38:17.119380+00:00 ERROR 'ansible_navigator.image_manager.puller._log_message' Execution environment pull failed
+2023-07-25T23:38:21.411799+00:00 ERROR 'ansible_navigator.actions.collections._run_runner' /usr/local/lib/python3.8/site-packages/paramiko/transport.py:236: CryptographyDeprecationWarning: Blowfish has been deprecated
+  "class": algorithms.Blowfish,
+Traceback (most recent call last):
+  File "/home/alexb/.cache/ansible-navigator/catalog_collections.py", line 42, in <module>
+    from ansible_navigator.utils.key_value_store import KeyValueStore
+ModuleNotFoundError: No module named 'ansible_navigator'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/alexb/.cache/ansible-navigator/catalog_collections.py", line 45, in <module>
+    from key_value_store import KeyValueStore
+  File "/opt/ansible_navigator_utils/key_value_store.py", line 14, in <module>
+    class KVSKeysView(KeysView[str]):
+TypeError: 'ABCMeta' object is not subscriptable
+
+2023-07-25T23:38:22.399443+00:00 ERROR 'ansible_navigator.actions.collections._parse' Unable to extract collection json from stdout
+2023-07-25T23:38:35.372475+00:00 ERROR 'ansible_navigator.image_manager.puller._log_message' Execution environment pull failed
+2023-07-25T23:38:39.935475+00:00 ERROR 'ansible_navigator.actions.collections._run_runner' /usr/local/lib/python3.8/site-packages/paramiko/transport.py:236: CryptographyDeprecationWarning: Blowfish has been deprecated
+  "class": algorithms.Blowfish,
+Traceback (most recent call last):
+  File "/home/alexb/.cache/ansible-navigator/catalog_collections.py", line 42, in <module>
+    from ansible_navigator.utils.key_value_store import KeyValueStore
+ModuleNotFoundError: No module named 'ansible_navigator'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/alexb/.cache/ansible-navigator/catalog_collections.py", line 45, in <module>
+    from key_value_store import KeyValueStore
+  File "/opt/ansible_navigator_utils/key_value_store.py", line 14, in <module>
+    class KVSKeysView(KeysView[str]):
+TypeError: 'ABCMeta' object is not subscriptable
+
+2023-07-25T23:38:40.637577+00:00 ERROR 'ansible_navigator.actions.collections._parse' Unable to extract collection json from stdout
+2023-07-25T23:39:29.839492+00:00 ERROR 'ansible_navigator.image_manager.puller._log_message' Execution environment pull failed
+2023-07-25T23:39:30.759615+00:00 CRITICAL 'ansible_navigator.actions.run_7512._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': '734a5c07-3707-4d09-a142-472c6e42c2af', 'counter': 1, 'stdout': '/usr/local/lib/python3.8/site-packages/paramiko/transport.py:236: CryptographyDeprecationWarning: Blowfish has been deprecated', 'start_line': 0, 'end_line': 1, 'runner_ident': '24c09001-4b42-4135-96e1-805dee2c8513', 'created': '2023-07-25T23:39:30.759309'}
+2023-07-25T23:39:30.870807+00:00 CRITICAL 'ansible_navigator.actions.run_7512._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': 'c909fcde-f8ba-4f01-9c64-288490b69406', 'counter': 2, 'stdout': '  "class": algorithms.Blowfish,', 'start_line': 1, 'end_line': 2, 'runner_ident': '24c09001-4b42-4135-96e1-805dee2c8513', 'created': '2023-07-25T23:39:30.760531'}
+2023-07-25T23:39:31.183646+00:00 CRITICAL 'ansible_navigator.actions.run_7512._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': 'b2157158-80a0-40b4-9199-fb8f171b47aa', 'counter': 3, 'stdout': '/usr/local/lib/python3.8/site-packages/paramiko/transport.py:236: CryptographyDeprecationWarning: Blowfish has been deprecated', 'start_line': 2, 'end_line': 3, 'runner_ident': '24c09001-4b42-4135-96e1-805dee2c8513', 'created': '2023-07-25T23:39:31.110986'}
+2023-07-25T23:39:31.183792+00:00 CRITICAL 'ansible_navigator.actions.run_7512._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': '24d1f462-53e2-4102-815b-dd04b2ad850c', 'counter': 4, 'stdout': '  "class": algorithms.Blowfish,', 'start_line': 3, 'end_line': 4, 'runner_ident': '24c09001-4b42-4135-96e1-805dee2c8513', 'created': '2023-07-25T23:39:31.111106'}
+2023-07-25T23:39:31.183852+00:00 CRITICAL 'ansible_navigator.actions.run_7512._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': 'a429c27b-45cd-4ecc-8011-45b8b777d1a1', 'counter': 5, 'stdout': '\x1b[1;35m[WARNING]: No inventory was parsed, only implicit localhost is available\x1b[0m', 'start_line': 4, 'end_line': 5, 'runner_ident': '24c09001-4b42-4135-96e1-805dee2c8513', 'created': '2023-07-25T23:39:31.123126'}
+2023-07-25T23:39:31.183895+00:00 CRITICAL 'ansible_navigator.actions.run_7512._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': '398d8dd2-7f99-4463-bb9d-925113d7775f', 'counter': 6, 'stdout': '\x1b[1;35m[WARNING]: provided hosts list is empty, only localhost is available. Note that\x1b[0m', 'start_line': 5, 'end_line': 6, 'runner_ident': '24c09001-4b42-4135-96e1-805dee2c8513', 'created': '2023-07-25T23:39:31.126244'}
+2023-07-25T23:39:31.183948+00:00 CRITICAL 'ansible_navigator.actions.run_7512._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': '43112003-8bb1-4056-8e16-26862d2af3e4', 'counter': 7, 'stdout': "\x1b[1;35mthe implicit localhost does not match 'all'\x1b[0m", 'start_line': 6, 'end_line': 7, 'runner_ident': '24c09001-4b42-4135-96e1-805dee2c8513', 'created': '2023-07-25T23:39:31.126302'}
+2023-07-25T23:40:08.421299+00:00 ERROR 'ansible_navigator.image_manager.puller._log_message' Execution environment pull failed
+2023-07-25T23:40:09.184535+00:00 CRITICAL 'ansible_navigator.actions.run_playbook._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': 'd8445b82-d6ed-49ce-ab5a-6d71121388f6', 'counter': 1, 'stdout': '/usr/local/lib/python3.8/site-packages/paramiko/transport.py:236: CryptographyDeprecationWarning: Blowfish has been deprecated', 'start_line': 0, 'end_line': 1, 'runner_ident': '84da01f6-2423-43e2-9129-cb1375541531', 'created': '2023-07-25T23:40:09.174436'}
+2023-07-25T23:40:09.184812+00:00 CRITICAL 'ansible_navigator.actions.run_playbook._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': '86cd667e-a887-496f-be40-953e6d4ff9a5', 'counter': 2, 'stdout': '  "class": algorithms.Blowfish,', 'start_line': 1, 'end_line': 2, 'runner_ident': '84da01f6-2423-43e2-9129-cb1375541531', 'created': '2023-07-25T23:40:09.174598'}
+2023-07-25T23:40:09.514372+00:00 CRITICAL 'ansible_navigator.actions.run_playbook._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': '15fc6a3f-e0de-4dc9-b61b-348779828457', 'counter': 3, 'stdout': '/usr/local/lib/python3.8/site-packages/paramiko/transport.py:236: CryptographyDeprecationWarning: Blowfish has been deprecated', 'start_line': 2, 'end_line': 3, 'runner_ident': '84da01f6-2423-43e2-9129-cb1375541531', 'created': '2023-07-25T23:40:09.506932'}
+2023-07-25T23:40:09.514617+00:00 CRITICAL 'ansible_navigator.actions.run_playbook._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': 'c5de3943-03ad-417b-9269-06003dc2e3ed', 'counter': 4, 'stdout': '  "class": algorithms.Blowfish,', 'start_line': 3, 'end_line': 4, 'runner_ident': '84da01f6-2423-43e2-9129-cb1375541531', 'created': '2023-07-25T23:40:09.507109'}
+2023-07-25T23:40:09.525708+00:00 CRITICAL 'ansible_navigator.actions.run_playbook._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': 'c376897b-8085-4410-a1ed-07b94d1d91b9', 'counter': 5, 'stdout': '\x1b[1;35m[WARNING]: No inventory was parsed, only implicit localhost is available\x1b[0m', 'start_line': 4, 'end_line': 5, 'runner_ident': '84da01f6-2423-43e2-9129-cb1375541531', 'created': '2023-07-25T23:40:09.518560'}
+2023-07-25T23:40:09.526064+00:00 CRITICAL 'ansible_navigator.actions.run_playbook._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': '90e81540-8653-4f0f-9cea-adfffcc741c6', 'counter': 6, 'stdout': '\x1b[1;35m[WARNING]: provided hosts list is empty, only localhost is available. Note that\x1b[0m', 'start_line': 5, 'end_line': 6, 'runner_ident': '84da01f6-2423-43e2-9129-cb1375541531', 'created': '2023-07-25T23:40:09.522256'}
+2023-07-25T23:40:09.526377+00:00 CRITICAL 'ansible_navigator.actions.run_playbook._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': 'e1c92179-e758-4a81-950d-7601bc3b6106', 'counter': 7, 'stdout': "\x1b[1;35mthe implicit localhost does not match 'all'\x1b[0m", 'start_line': 6, 'end_line': 7, 'runner_ident': '84da01f6-2423-43e2-9129-cb1375541531', 'created': '2023-07-25T23:40:09.522364'}
+2023-07-26T00:01:27.873551+00:00 ERROR 'ansible_navigator.image_manager.puller._log_message' Execution environment pull failed
+2023-07-26T00:01:31.522380+00:00 ERROR 'ansible_navigator.actions.collections._run_runner' Traceback (most recent call last):
+  File "/home/alexb/.cache/ansible-navigator/catalog_collections.py", line 42, in <module>
+    from ansible_navigator.utils.key_value_store import KeyValueStore
+ModuleNotFoundError: No module named 'ansible_navigator'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/alexb/.cache/ansible-navigator/catalog_collections.py", line 45, in <module>
+    from key_value_store import KeyValueStore
+  File "/opt/ansible_navigator_utils/key_value_store.py", line 14, in <module>
+    class KVSKeysView(KeysView[str]):
+TypeError: 'ABCMeta' object is not subscriptable
+
+2023-07-26T00:01:35.858121+00:00 ERROR 'ansible_navigator.actions.collections._parse' Unable to extract collection json from stdout
+2023-07-26T00:05:49.493583+00:00 ERROR 'ansible_navigator.image_manager.puller._log_message' Execution environment pull failed
+2023-07-26T00:05:53.185452+00:00 ERROR 'ansible_navigator.actions.collections._run_runner' Traceback (most recent call last):
+  File "/home/alexb/.cache/ansible-navigator/catalog_collections.py", line 42, in <module>
+    from ansible_navigator.utils.key_value_store import KeyValueStore
+ModuleNotFoundError: No module named 'ansible_navigator'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/alexb/.cache/ansible-navigator/catalog_collections.py", line 45, in <module>
+    from key_value_store import KeyValueStore
+  File "/opt/ansible_navigator_utils/key_value_store.py", line 14, in <module>
+    class KVSKeysView(KeysView[str]):
+TypeError: 'ABCMeta' object is not subscriptable
+
+2023-07-26T00:05:53.755917+00:00 ERROR 'ansible_navigator.actions.collections._parse' Unable to extract collection json from stdout
+2023-07-26T00:06:14.699449+00:00 ERROR 'ansible_navigator.image_manager.puller._log_message' Execution environment pull failed
+2023-07-26T00:06:47.842921+00:00 ERROR 'ansible_navigator.actions.collections._run_runner' Traceback (most recent call last):
+  File "/home/alexb/.cache/ansible-navigator/catalog_collections.py", line 42, in <module>
+    from ansible_navigator.utils.key_value_store import KeyValueStore
+ModuleNotFoundError: No module named 'ansible_navigator'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/alexb/.cache/ansible-navigator/catalog_collections.py", line 45, in <module>
+    from key_value_store import KeyValueStore
+  File "/opt/ansible_navigator_utils/key_value_store.py", line 14, in <module>
+    class KVSKeysView(KeysView[str]):
+TypeError: 'ABCMeta' object is not subscriptable
+
+2023-07-26T00:06:48.446780+00:00 ERROR 'ansible_navigator.actions.collections._parse' Unable to extract collection json from stdout
+2023-07-26T00:07:10.830720+00:00 ERROR 'ansible_navigator.actions.collections._run_runner' Traceback (most recent call last):
+  File "/home/alexb/.cache/ansible-navigator/catalog_collections.py", line 42, in <module>
+    from ansible_navigator.utils.key_value_store import KeyValueStore
+ModuleNotFoundError: No module named 'ansible_navigator'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/alexb/.cache/ansible-navigator/catalog_collections.py", line 45, in <module>
+    from key_value_store import KeyValueStore
+  File "/opt/ansible_navigator_utils/key_value_store.py", line 14, in <module>
+    class KVSKeysView(KeysView[str]):
+TypeError: 'ABCMeta' object is not subscriptable
+
+2023-07-26T00:07:17.056531+00:00 WARNING 'ansible_navigator.run' Dirty exit, killing the pid
+2023-07-26T00:11:06.867440+00:00 ERROR 'ansible_navigator.image_manager.puller._log_message' Execution environment pull failed
+2023-07-26T00:11:11.414968+00:00 ERROR 'ansible_navigator.actions.collections._run_runner' Traceback (most recent call last):
+  File "/home/alexb/.cache/ansible-navigator/catalog_collections.py", line 42, in <module>
+    from ansible_navigator.utils.key_value_store import KeyValueStore
+ModuleNotFoundError: No module named 'ansible_navigator'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/alexb/.cache/ansible-navigator/catalog_collections.py", line 45, in <module>
+    from key_value_store import KeyValueStore
+  File "/opt/ansible_navigator_utils/key_value_store.py", line 14, in <module>
+    class KVSKeysView(KeysView[str]):
+TypeError: 'ABCMeta' object is not subscriptable
+
+2023-07-26T00:11:11.844790+00:00 ERROR 'ansible_navigator.actions.collections._parse' Unable to extract collection json from stdout
+2023-07-26T00:15:28.620304+00:00 ERROR 'ansible_navigator.actions.collections._run_runner' Traceback (most recent call last):
+  File "/home/alexb/.cache/ansible-navigator/catalog_collections.py", line 42, in <module>
+    from ansible_navigator.utils.key_value_store import KeyValueStore
+ModuleNotFoundError: No module named 'ansible_navigator'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/alexb/.cache/ansible-navigator/catalog_collections.py", line 45, in <module>
+    from key_value_store import KeyValueStore
+  File "/opt/ansible_navigator_utils/key_value_store.py", line 14, in <module>
+    class KVSKeysView(KeysView[str]):
+TypeError: 'ABCMeta' object is not subscriptable
+
+2023-07-26T00:15:29.470883+00:00 ERROR 'ansible_navigator.actions.collections._parse' Unable to extract collection json from stdout
+2023-07-26T00:29:56.949554+00:00 ERROR 'ansible_navigator.actions.collections._parse' Unable to extract collection json from stdout
+2023-07-26T01:08:40.598833+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/redhatinsights/insights/roles/insights_client/meta/argument_specs.yml Failed to find argument_specs.yml for role in redhatinsights.insights.
+2023-07-26T01:08:40.599161+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/redhatinsights/insights/roles/compliance/meta/argument_specs.yml Failed to find argument_specs.yml for role in redhatinsights.insights.
+2023-07-26T01:08:40.599201+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_views/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2023-07-26T01:08:40.599227+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_views/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2023-07-26T01:08:40.599251+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/settings/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2023-07-26T01:08:40.599273+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/settings/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2023-07-26T01:08:40.599293+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/domains/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2023-07-26T01:08:40.599314+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/domains/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2023-07-26T01:08:40.599335+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/sync_plans/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2023-07-26T01:08:40.599361+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/sync_plans/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2023-07-26T01:08:40.599382+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_rhel/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2023-07-26T01:08:40.599402+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_rhel/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2023-07-26T01:08:40.599422+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/provisioning_templates/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2023-07-26T01:08:40.599442+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/provisioning_templates/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2023-07-26T01:08:40.599461+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/organizations/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2023-07-26T01:08:40.599482+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/organizations/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2023-07-26T01:08:40.599502+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/compute_resources/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2023-07-26T01:08:40.599522+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/compute_resources/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2023-07-26T01:08:40.599561+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/auth_sources_ldap/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2023-07-26T01:08:40.599588+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/auth_sources_ldap/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2023-07-26T01:08:40.599610+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/convert2rhel/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2023-07-26T01:08:40.599631+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/convert2rhel/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2023-07-26T01:08:40.599654+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_credentials/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2023-07-26T01:08:40.599674+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_credentials/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2023-07-26T01:08:40.599694+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/repositories/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2023-07-26T01:08:40.599719+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/repositories/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2023-07-26T01:08:40.599740+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/hostgroups/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2023-07-26T01:08:40.599761+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/hostgroups/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2023-07-26T01:08:40.599781+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/lifecycle_environments/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2023-07-26T01:08:40.599802+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/lifecycle_environments/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2023-07-26T01:08:40.599821+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/activation_keys/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2023-07-26T01:08:40.599841+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/activation_keys/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2023-07-26T01:08:40.599860+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/manifest/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2023-07-26T01:08:40.599879+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/manifest/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2023-07-26T01:08:40.599899+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_view_publish/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2023-07-26T01:08:40.599918+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_view_publish/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2023-07-26T01:08:40.599937+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/compute_profiles/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2023-07-26T01:08:40.599957+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/compute_profiles/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2023-07-26T01:08:40.599977+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_view_version_cleanup/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2023-07-26T01:08:40.599997+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/content_view_version_cleanup/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2023-07-26T01:08:40.600016+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/operatingsystems/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2023-07-26T01:08:40.600039+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/operatingsystems/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2023-07-26T01:08:40.600060+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/subnets/meta/argument_specs.yml Failed to find argument_specs.yml for role in theforeman.foreman.
+2023-07-26T01:08:40.600079+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/theforeman/foreman/roles/subnets/meta/main.yml Failed to find main.yml for role in theforeman.foreman.
+2023-07-26T01:11:10.849531+00:00 ERROR 'ansible_navigator.actions.images._parse' Unable to extract introspection from stdout
+2023-07-26T01:11:10.850305+00:00 ERROR 'ansible_navigator.actions.images._parse' Image introspection failed (parsed), the return value was: /usr/local/lib/python3.8/site-packages/paramiko/transport.py:236: CryptographyDeprecationWarning: Blowfish has been deprecated
+  "class": algorithms.Blowfish,
+
+2023-07-26T01:11:21.140004+00:00 ERROR 'ansible_navigator.actions.images._parse' Unable to extract introspection from stdout
+2023-07-26T01:11:21.140177+00:00 ERROR 'ansible_navigator.actions.images._parse' Image introspection failed (parsed), the return value was: 
+2023-07-26T01:11:48.028361+00:00 ERROR 'ansible_navigator.actions.images._parse' Unable to extract introspection from stdout
+2023-07-26T01:11:48.028563+00:00 ERROR 'ansible_navigator.actions.images._parse' Image introspection failed (parsed), the return value was: 
+2023-07-26T04:41:14.837829+00:00 ERROR 'ansible_navigator.image_manager.puller._log_message' Execution environment pull failed
+2023-07-26T04:43:52.100878+00:00 ERROR 'ansible_navigator.image_manager.puller._log_message' Execution environment pull failed
+2023-07-27T02:02:05.050162+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/aap_utilities/roles/aap_backup/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.aap_utilities.
+2023-07-27T02:02:05.050703+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/aap_utilities/roles/aap_certs/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.aap_utilities.
+2023-07-27T02:02:05.050772+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/aap_utilities/roles/aap_ocp_install/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.aap_utilities.
+2023-07-27T02:02:05.050854+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/aap_utilities/roles/aap_remove/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.aap_utilities.
+2023-07-27T02:02:05.050929+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/aap_utilities/roles/aap_restore/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.aap_utilities.
+2023-07-27T02:02:05.051015+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/aap_utilities/roles/aap_setup_download/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.aap_utilities.
+2023-07-27T02:02:05.051101+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/aap_utilities/roles/aap_setup_install/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.aap_utilities.
+2023-07-27T02:02:05.051184+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/aap_utilities/roles/aap_setup_prepare/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.aap_utilities.
+2023-07-27T02:02:05.051275+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/aap_utilities/roles/git_ssh_setup/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.aap_utilities.
+2023-07-27T02:02:05.051375+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/aap_utilities/roles/kerberos/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.aap_utilities.
+2023-07-27T02:02:05.051466+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/ah_configuration/roles/ansible_config/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.ah_configuration.
+2023-07-27T02:02:05.051552+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/ah_configuration/roles/collection/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.ah_configuration.
+2023-07-27T02:02:05.051633+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/ah_configuration/roles/dispatch/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.ah_configuration.
+2023-07-27T02:02:05.051714+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/ah_configuration/roles/ee_image/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.ah_configuration.
+2023-07-27T02:02:05.051796+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/ah_configuration/roles/ee_namespace/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.ah_configuration.
+2023-07-27T02:02:05.051877+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/ah_configuration/roles/ee_registry/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.ah_configuration.
+2023-07-27T02:02:05.051957+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/ah_configuration/roles/ee_registry_index/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.ah_configuration.
+2023-07-27T02:02:05.052038+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/ah_configuration/roles/ee_registry_sync/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.ah_configuration.
+2023-07-27T02:02:05.052117+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/ah_configuration/roles/ee_repository/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.ah_configuration.
+2023-07-27T02:02:05.052198+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/ah_configuration/roles/ee_repository_sync/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.ah_configuration.
+2023-07-27T02:02:05.052279+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/ah_configuration/roles/group/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.ah_configuration.
+2023-07-27T02:02:05.052379+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/ah_configuration/roles/namespace/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.ah_configuration.
+2023-07-27T02:02:05.052469+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/ah_configuration/roles/publish/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.ah_configuration.
+2023-07-27T02:02:05.052556+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/ah_configuration/roles/repository/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.ah_configuration.
+2023-07-27T02:02:05.052637+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/ah_configuration/roles/repository_sync/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.ah_configuration.
+2023-07-27T02:02:05.052717+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/ah_configuration/roles/role/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.ah_configuration.
+2023-07-27T02:02:05.052798+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/ah_configuration/roles/user/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.ah_configuration.
+2023-07-27T02:02:05.052878+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/ee_utilities/roles/ee_builder/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.ee_utilities.
+2023-07-27T02:02:05.052958+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/ee_utilities/roles/virtualenv_migrate/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.ee_utilities.
+2023-07-27T02:29:21.443710+00:00 WARNING 'ansible_navigator.image_manager.puller._log_message' Image inspection failed, image assumed to be corrupted or missing
+2023-07-27T02:29:21.444374+00:00 WARNING 'ansible_navigator.image_manager.puller._log_message' stdout: []
+
+2023-07-27T02:29:21.444472+00:00 WARNING 'ansible_navigator.image_manager.puller._log_message' stderr: Error: inspecting object: hub-student1.gt955.example.opentlc.com/azure_ee_new:latest: image not known
+
+2023-07-27T02:29:21.669499+00:00 ERROR 'ansible_navigator.image_manager.puller._log_message' Execution environment pull failed
+2023-07-27T02:29:27.279957+00:00 WARNING 'ansible_navigator.image_manager.puller._log_message' Image inspection failed, image assumed to be corrupted or missing
+2023-07-27T02:29:27.280522+00:00 WARNING 'ansible_navigator.image_manager.puller._log_message' stdout: []
+
+2023-07-27T02:29:27.280609+00:00 WARNING 'ansible_navigator.image_manager.puller._log_message' stderr: Error: inspecting object: hub-student1.gt955.example.opentlc.com/azure_ee_new:latest: image not known
+
+2023-07-27T02:29:27.503182+00:00 ERROR 'ansible_navigator.image_manager.puller._log_message' Execution environment pull failed
+2023-07-27T02:39:56.129439+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/aap_utilities/roles/aap_backup/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.aap_utilities.
+2023-07-27T02:39:56.129893+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/aap_utilities/roles/aap_certs/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.aap_utilities.
+2023-07-27T02:39:56.129984+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/aap_utilities/roles/aap_ocp_install/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.aap_utilities.
+2023-07-27T02:39:56.130083+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/aap_utilities/roles/aap_remove/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.aap_utilities.
+2023-07-27T02:39:56.130181+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/aap_utilities/roles/aap_restore/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.aap_utilities.
+2023-07-27T02:39:56.130285+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/aap_utilities/roles/aap_setup_download/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.aap_utilities.
+2023-07-27T02:39:56.130395+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/aap_utilities/roles/aap_setup_install/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.aap_utilities.
+2023-07-27T02:39:56.130490+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/aap_utilities/roles/aap_setup_prepare/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.aap_utilities.
+2023-07-27T02:39:56.130584+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/aap_utilities/roles/git_ssh_setup/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.aap_utilities.
+2023-07-27T02:39:56.130690+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/aap_utilities/roles/kerberos/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.aap_utilities.
+2023-07-27T02:39:56.130783+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/ah_configuration/roles/ansible_config/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.ah_configuration.
+2023-07-27T02:39:56.130874+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/ah_configuration/roles/collection/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.ah_configuration.
+2023-07-27T02:39:56.130966+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/ah_configuration/roles/dispatch/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.ah_configuration.
+2023-07-27T02:39:56.131056+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/ah_configuration/roles/ee_image/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.ah_configuration.
+2023-07-27T02:39:56.131146+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/ah_configuration/roles/ee_namespace/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.ah_configuration.
+2023-07-27T02:39:56.131234+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/ah_configuration/roles/ee_registry/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.ah_configuration.
+2023-07-27T02:39:56.131325+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/ah_configuration/roles/ee_registry_index/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.ah_configuration.
+2023-07-27T02:39:56.131441+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/ah_configuration/roles/ee_registry_sync/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.ah_configuration.
+2023-07-27T02:39:56.131532+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/ah_configuration/roles/ee_repository/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.ah_configuration.
+2023-07-27T02:39:56.131622+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/ah_configuration/roles/ee_repository_sync/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.ah_configuration.
+2023-07-27T02:39:56.131719+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/ah_configuration/roles/group/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.ah_configuration.
+2023-07-27T02:39:56.131810+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/ah_configuration/roles/namespace/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.ah_configuration.
+2023-07-27T02:39:56.131900+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/ah_configuration/roles/publish/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.ah_configuration.
+2023-07-27T02:39:56.131990+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/ah_configuration/roles/repository/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.ah_configuration.
+2023-07-27T02:39:56.132080+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/ah_configuration/roles/repository_sync/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.ah_configuration.
+2023-07-27T02:39:56.132171+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/ah_configuration/roles/role/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.ah_configuration.
+2023-07-27T02:39:56.132261+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/ah_configuration/roles/user/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.ah_configuration.
+2023-07-27T02:39:56.132367+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/ee_utilities/roles/ee_builder/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.ee_utilities.
+2023-07-27T02:39:56.132464+00:00 ERROR 'ansible_navigator.actions.collections._parse' /usr/share/ansible/collections/ansible_collections/infra/ee_utilities/roles/virtualenv_migrate/meta/argument_specs.yml Failed to find argument_specs.yml for role in infra.ee_utilities.
+2023-07-27T03:32:54.030444+00:00 CRITICAL 'ansible_navigator.actions.run_2a8e._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': '8bdd3695-82a4-47c3-a960-c769e9a57587', 'counter': 1, 'stdout': '/usr/local/lib/python3.8/site-packages/paramiko/transport.py:236: CryptographyDeprecationWarning: Blowfish has been deprecated', 'start_line': 0, 'end_line': 1, 'runner_ident': 'ae19e117-042e-42e6-9ccf-550aa3c9b111', 'created': '2023-07-27T03:32:54.030026'}
+2023-07-27T03:32:54.031300+00:00 CRITICAL 'ansible_navigator.actions.run_2a8e._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': '6b0330d3-7b8c-470c-8f1b-87cb8fdff82d', 'counter': 2, 'stdout': '  "class": algorithms.Blowfish,', 'start_line': 1, 'end_line': 2, 'runner_ident': 'ae19e117-042e-42e6-9ccf-550aa3c9b111', 'created': '2023-07-27T03:32:54.030842'}
+2023-07-27T03:32:54.646569+00:00 CRITICAL 'ansible_navigator.actions.run_2a8e._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': 'f61a1b90-37b6-4603-9e7b-67f65edb7388', 'counter': 3, 'stdout': '/usr/local/lib/python3.8/site-packages/paramiko/transport.py:236: CryptographyDeprecationWarning: Blowfish has been deprecated', 'start_line': 2, 'end_line': 3, 'runner_ident': 'ae19e117-042e-42e6-9ccf-550aa3c9b111', 'created': '2023-07-27T03:32:54.636519'}
+2023-07-27T03:32:54.646814+00:00 CRITICAL 'ansible_navigator.actions.run_2a8e._handle_message' Unhandled message from runner queue, discarded: {'event': 'verbose', 'uuid': '802a39ee-dceb-4d9a-9e59-720ed5664998', 'counter': 4, 'stdout': '  "class": algorithms.Blowfish,', 'start_line': 3, 'end_line': 4, 'runner_ident': 'ae19e117-042e-42e6-9ccf-550aa3c9b111', 'created': '2023-07-27T03:32:54.636661'}

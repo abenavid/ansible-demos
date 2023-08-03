@@ -1,0 +1,15 @@
+---
+all:
+  children:
+    automationcontroller:
+      hosts:
+        student1.gt955.example.opentlc.com:
+
+    automationhub:
+      hosts:
+        hub-student1.gt955.example.opentlc.com:
+
+    builder:
+      hosts:
+        localhost:
+...
